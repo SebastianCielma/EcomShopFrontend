@@ -13,16 +13,20 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { FullpageComponent } from './layouts/fullpage/fullpage.component';
 import { FullpageModule } from './layouts/fullpage/fullpage.module';
 import { LoginComponent } from './modules/login/login.component';
+import { FullpageadminComponent } from './layouts/fullpageadmin/fullpageadmin.component';
+import { AdminComponent } from './modules/admin/admin.component';
+import { FullpageadminModule } from './layouts/fullpageadmin/fullpageadmin.module';
 
 @NgModule({
   declarations: [
-    AppComponent,   
+    AppComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DefaultModule,
-    FullpageModule
+    FullpageModule,
+    FullpageadminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
