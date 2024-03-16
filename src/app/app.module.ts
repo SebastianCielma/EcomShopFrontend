@@ -16,6 +16,7 @@ import { LoginComponent } from './modules/login/login.component';
 import { FullpageadminComponent } from './layouts/fullpageadmin/fullpageadmin.component';
 import { AdminComponent } from './modules/admin/admin.component';
 import { FullpageadminModule } from './layouts/fullpageadmin/fullpageadmin.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { FullpageadminModule } from './layouts/fullpageadmin/fullpageadmin.modul
     FullpageModule,
     FullpageadminModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
